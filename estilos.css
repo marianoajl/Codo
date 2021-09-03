@@ -1,0 +1,88 @@
+
+
+*{
+ margin: 0px;
+ 
+ }
+
+p {
+   color:red;
+}
+
+span {
+   color:yellow;
+}
+/* ***************** Menu de opciones ********************* */ 
+.menuvertical {
+        background-color: black;
+        height: 60px;
+}
+
+.menuvertical p {
+        color: white;
+        text-align: right;
+        font-style: bold;
+        font-size: 20px;
+        padding: 20px 15px 0px 0px;
+}
+
+
+/* ***************** Formulario ********************* */ 
+
+
+*{
+ margin: 0px;
+ 
+ }
+
+p {
+   color:red;
+}
+
+span {
+   color:yellow;
+}
+/* ***************** Menu de opciones ********************* */ 
+.menuvertical {
+        background-color: black;
+        height: 60px;
+}
+
+.menuvertical p {
+        color: white;
+        text-align: right;
+        font-style: bold;
+        font-size: 20px;
+        padding: 20px 15px 0px 0px;
+}
+
+
+/* ***************** Formulario ********************* */ 
+
+.formulario {
+            background-color: white; /* color de fondo */
+            height: 100%;            /* alto de la clase formulario */
+            justify-content: center; /* ubicacion de los elementos */
+            align-items: center; /* centrado para el formulario */
+            display:flex;
+}
+
+form {
+                background-color: gray; /* color de fondo */    
+                max-width :400px;
+                margin: 0 auto;            /* centrado */     
+                padding: 60px;            /* margen interno */
+                
+                
+}
+
+form input {
+                margin-bottom: 15px; /* margen inferior  top, left, right */
+                width: 100%;
+                padding: 10px;            /* margen interno */
+
+}
+
+form button {
+
+}
