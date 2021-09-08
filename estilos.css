@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
 *{
- margin: 0px;
- 
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
  }
 
 p {
@@ -12,9 +14,13 @@ span {
 }
 
 /* ***************** Menu de opciones ********************* */ 
+
 .menuvertical {
         background-color: black;
         height: 60px;
+        font-family: 'Roboto', sans-serif;
+        position: fixed; /* fijo el encazado del menu */
+        width: 100%;
 }
 
 .menuvertical p {
@@ -24,44 +30,13 @@ span {
         font-size: 20px;
         padding: 20px 15px 0px 0px;
 }
-
-
-/* ***************** Formulario ********************* */ 
-
-
-*{
- margin: 0px;
- 
- }
-
-p {
-   color:red;
-}
-
-span {
-   color:yellow;
-}
-
-/* ***************** Menu de opciones ********************* */ 
-.menuvertical {
-        background-color: black;
-        height: 60px;
-}
-
-.menuvertical p {
-        color: white;
-        text-align: right;
-        font-style: bold;
-        font-size: 20px;
-        padding: 20px 15px 0px 0px;
-}
-
 
 /* ***************** Formulario ********************* */ 
 
 .formulario {
-            background-color: white; /* color de fondo */
-            height: 100%;            /* alto de la clase formulario */
+            background-color: green; /* color de fondo */
+            height: 100vh;            /* alto de la clase formulario */
+            /* vh = viewport horizontal = tamaño de la pantalla */
             justify-content: center; /* ubicacion de los elementos */
             align-items: center; /* centrado para el formulario */
             display:flex;
@@ -69,20 +44,45 @@ span {
 
 form {
                 background-color: gray; /* color de fondo */    
-                max-width :400px;
-                margin: 0 auto;            /* centrado */     
-                padding: 60px;            /* margen interno */
-                
-                
+                max-width :480px;
+                padding: 10px;            /* margen interno */
+                text-align: center;
+                border-radius: 15px;    
 }
 
 form input {
-                margin-bottom: 15px; /* margen inferior  top, left, right */
-                width: 100%;
-                padding: 10px;            /* margen interno */
+                margin-bottom: 10px; /* margen inferior  top, left, right */
+                width: 80%;
+                padding: 15px;        /* margen interno */
+                font-family: 'Roboto', sans-serif;
+                outline: none;  /* anulo el borde del cuadro de texto por default */
+                border: 2px red solid; /* borde del cuadro de texto */
+                border-radius: 15px;
+}
 
+form input:focus{
+            border: 2px green solid;
+            /*background-color: red; */ 
 }
 
 form button {
-
+            background-color: orange;
+            /*padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;*/
+            padding: 10px 50px 10px 50px;
+            
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+            font-weight: 500;
+            border: 0;
+            color: black;
+            border-radius: 15px;
 }
+
+form button:hover{
+            color: white;
+            background-color: red;          
+}
+
